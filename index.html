@@ -4,15 +4,12 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic
-Garment Manipulation featuring a High-Fidelity Scalable Simulator">
-  <meta property="og:title" content="Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic
-Garment Manipulation featuring a High-Fidelity Scalable Simulator"/>
-  <meta property="og:description" content="Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic
-Garment Manipulation featuring a High-Fidelity Scalable Simulator"/>
-  <meta property="og:url" content="https://sivan666666.github.io/RGBench/"/>
+  <meta name="description" content="StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots">
+  <meta property="og:title" content="StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots"/>
+  <meta property="og:description" content="StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots"/>
+  <meta property="og:url" content="https://sivan666666.github.io/StairMaster/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/overview.pdf" />
+  <meta property="og:image" content="static/image/structure.pdf" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
@@ -27,8 +24,7 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic
-Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
+  <title>StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -50,13 +46,27 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
 </head>
 <body>
 
+  <!-- 新增的全屏背景标题区域 -->
+  <section class="hero is-fullheight" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('static/images/titu.png'); background-size: cover; background-position: center;">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1" style="color: white; font-size: 8rem; text-shadow: 2px 2px 4px #000000;">
+          StairMaster
+        </h1>
+        <!-- 移除了 white-space: nowrap; 让它可以自然换行，增加了 line-height 使多行显示更美观 -->
+        <h2 class="subtitle is-3" style="color: white; font-size: clamp(1.5rem, 3vw, 4rem); text-shadow: 2px 2px 4px #000000; margin-top: 1.5rem; line-height: 1.4; padding: 0 1rem;">
+          Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots
+        </h2>
+      </div>
+    </div>
+  </section>
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Real Garment Benchmark (RGBench): A Comprehensive Benchmark for Robotic Garment Manipulation featuring a High-Fidelity Scalable Simulator</h1>
+            <h1 class="title is-1 publication-title">StairMaster: Learning to Conquer Risky Hollow Stairs for Agile Quadrupedal Robots</h1>
             <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wenkang Hu</a><sup>*</sup>,</span>
@@ -66,32 +76,35 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ruigang Yang</a>
                   </span>
                   </div> -->
-
+                  <!-- 添加了 margin-top 用来增加空行间距 -->
+                  <div class="is-size-5 publication-authors" style="margin-top: 1.5rem;">
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Wenkang Hu<sup>*</sup>,</span>
-                    <span class="author-block">Xincheng Tang<sup>*</sup>,</span>
-                    <span class="author-block">Yanzhi E, </span>
-                    <span class="author-block">Yitong Li, </span>
+                    <!-- 为第一作者添加超链接，将其颜色设为黑色并保留下划线 -->
+                    <span class="author-block"><a href="https://sivan666666.github.io/" target="_blank" style="color: black; text-decoration: underline;">Xincheng Tang</a>,</span>
+                    <span class="author-block">Youhan Xie,</span>
                     <span class="author-block">Zhengjie Shu, </span>
-                    <span class="author-block">Wei Li<sup>†</sup>, </span>
-                    <span class="author-block">Huamin Wang, </span>
+                    <span class="author-block">Wanyu Li, </span>
+                    <span class="author-block">Lai Jiang, </span>
                     <span class="author-block">Ruigang Yang<sup>†</sup></span>
                   </div>
-
+                  
+                  <!-- 添加了 margin-top 用来增加空行间距 -->
+                  <div class="is-size-5 publication-authors" style="margin-top: 1.5rem;">
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
-                      <sup>1</sup><img src="static/images/SJTU.png" alt="SJTU GIFT" style="height:48px;vertical-align:middle;margin-right:8px;">
-                      Shanghai Jiao Tong University,
-                      <sup>2</sup><img src="static/images/style3d.png" alt="Style3D" style="height:48px;vertical-align:middle;margin-left:8px;margin-right:8px;">
-                      Style3D,
-                      <sup>3</sup><img src="static/images/NJU.png" alt="Nanjing University" style="height:48px;vertical-align:middle;margin-left:8px;">
-                      Nanjing University
-                      <br>AAAI 2026 Accepted
+                      <img src="static/images/SJTU.png" alt="SJTU GIFT" style="height:48px;vertical-align:middle;margin-right:8px;">
+                      Shanghai Jiao Tong University
+                      <!-- <br>AAAI 2026 Accepted -->
                     </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution<br><sup>†</sup>Corresponding Author</small></span>
+                    
+                    <!-- 新增了一个 div 包裹并添加了 margin-top 用来强制换行和产生空行 -->
+                    <div style="margin-top: 0.5rem;">
+                      <span class="eql-cntrb"><sup>†</sup>Corresponding Author</span>
+                    </div>
+
                     <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
                       <span class="author-block">
-                        <small>chn.h.w.k@sjtu.edu.cn, tangxincheng@sjtu.edu.cn, ryang2@sjtu.edu.cn</small>
+                        <small>tangxincheng@sjtu.edu.cn, ryang2@sjtu.edu.cn</small>
                       </span>
                     </div>
                   </div>
@@ -100,8 +113,9 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
                     
                       
                     <span class="link-block">
-                      <a href="static/pdfs/RGBench.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                      <!-- 添加了 style="color: white;" 强制覆盖蓝色 -->
+                      <a href="static/pdfs/IROS_2026_StairMaster_final_submit.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark" style="color: white;">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -122,7 +136,7 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
                   </span> -->
 
                 <!-- Github link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/hwk0809/RGBench" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -130,7 +144,7 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
                   </span>
                   <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -150,51 +164,6 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- 两行三列视频 -->
-      <div class="columns is-multiline is-centered">
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/4.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/5.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video autoplay controls muted loop width="100%">
-            <source src="static/videos/6.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
-        Robotic Manipulation of Garments and Fabrics with Diverse Materials in RGBench.
-      </h2>
-    </div>
-  </div>
-</section>
 <!-- End teaser video -->
 <!-- End teaser video -->
 
@@ -203,7 +172,7 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
     <div class="container has-text-centered">
       <h2 class="title is-3" style="margin-bottom: 1rem;">Introduction Video</h2>
       <video controls autoplay muted loop style="max-width:1500px;width:100%;border-radius:10px;">
-        <source src="static/videos/video.mp4" type="video/mp4">
+        <source src="static/videos/submit_video3.mp4" type="video/mp4">
         您的浏览器不支持 video 标签。
       </video>
     </div>
@@ -218,7 +187,7 @@ Garment Manipulation featuring a High-Fidelity Scalable Simulator</title>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified is-size-5">
           <p>
-While there has been significant progress to use simulated data to learn robotic manipulation of rigid objects, applying its success to deformable objects has been hindered by the lack of both deformable object models and realistic non-rigid body simulators. In this paper, we present Real Garment Benchmark(RGBench), a comprehensive benchmark for robotic manipulation of garments. It features a diverse set of over 6000 garment mesh models, a new high-performance simulator, and a comprehensive protocol to evaluate garment simulation quality with carefully measured real garment dynamics. Our experiments demonstrate that our simulator outperforms currently available cloth simulators by a large margin, reducing simulation error by 20% while maintaining a speed of 3 times faster. We will publicly release RGBench to accelerate future research in robotic garment manipulation. 
+Climbing hollow stairs remains a challenging problem for quadruped robots due to the high risk of leg trapping, severe depth sparsity, and high-frequency depth-sensing noise. In this paper, we propose StairMaster, a novel three-stage reinforcement learning framework for stable locomotion on such extreme discontinuous terrains.  Our architecture integrates a Cross-Attention mechanism to extract structural features from noisy depth data, alongside a Spatial-aware Recurrent Unit (SRU) that maintains robust spatio-temporal memory to mitigate perception blind spots. To bridge the sim-to-real gap in depth perception, we propose a high-fidelity sim-to-real depth sensor modeling pipeline that faithfully replicates real-world sensor artifacts. Additionally, we employ a 3D waypoint-guided active perception reward for proactive sensing, alongside hollow gap kinematic and stair edge penalties to ensure precise foothold placement. We successfully deployed StairMaster on a Unitree Go2 robot, demonstrating its ability to conquer hollow stairs with an unprecedented incline of up to 55° through zero-shot transfer. To the best of our knowledge, this is the first RL-based policy to achieve such steep hollow stair climbing in real-world environments.
           </p>
         </div>
       </div>
@@ -231,72 +200,15 @@ While there has been significant progress to use simulated data to learn robotic
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3" style="margin-bottom: 1rem;">Overview</h2>
-      <img src="static/images/overview.png" alt="Overview of RGBench framework" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
+      <img src="static/images/Structure.png" alt="Overview of StairMaster framework" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
       <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        Overview of RGBench framework, which integrates a diverse garment dataset, dual-arm robotic
-        setups, and the GarmentDynamics simulation system, covering three core tasks to bridge real-world and simulated garment interaction research.
+        Overview of StairMaster framework.
       </h2>
     </div>
   </div>
 </section>
 
-<!-- Image carousel -->
- <!-- 单张图片展示替换原图片轮播 -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-3" style="margin-bottom: 1rem;">Dataset</h2>
-      <img src="static/images/dataset.png" alt="RGBench garment dataset" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        RGBench garment dataset
-      </h2>
-    </div>
-  </div>
-</section>
 
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-3" style="margin-bottom: 1rem;">Results</h2>
-      
-      <!-- 新增的效率对比图 -->
-      <h3 class="title is-4" style="text-align: left; margin-bottom: 1rem;">Simulator efficiency comparison</h3>
-      <img src="static/images/effiency_compare.png" alt="Simulator efficiency comparison" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        Simulator efficiency comparison (left) Average Initial Time; (right) Average Step Time
-        <br>
-        <strong><span style="font-size: 1.1em;"><span style="color: #3273dc;">3</span>X</span></strong> faster than Isaac Sim, reducing <strong><span style="font-size: 1.1em; color: #3273dc;">90%</span></strong> initialization time
-      </h2>
-      <div style="margin-bottom: 2rem;"></div>
-
-      <!-- 新增的准确性对比表格 -->
-      <h3 class="title is-4" style="text-align: left; margin-bottom: 1rem;">Benchmark in cloth simulation accuracy</h3>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <img src="static/images/table.png" alt="Benchmark table" style="max-width:480px;width:48%;height:auto;border-radius:10px;">
-        <img src="static/images/table1.png" alt="Benchmark table 1" style="max-width:480px;width:48%;height:auto;border-radius:10px;">
-      </div>
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        It reduces the sim-to-real gap by over <strong><span style="font-size: 1.1em; color: #3273dc;">20%</span></strong> on average and by as much as <strong><span style="font-size: 1.1em; color: #3273dc;">77%</span></strong> for topologically complex garments.
-      </h2>
-      <div style="margin-bottom: 2rem;"></div>
-      
-      <!-- 原有的results图 -->
-      <h3 class="title is-4" style="text-align: left; margin-bottom: 1rem;">Qualitative results of different actions for a T-shirt</h3>
-      <img src="static/images/results.png" alt="RGBench garment results" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
-      <div style="margin-bottom: 2rem;"></div>
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem; margin-bottom: 2rem;">
-        For grasp and fold tasks, error reduction up to <strong><span style="font-size: 1.1em; color: #3273dc;">35%</span></strong> and <strong><span style="font-size: 1.1em; color: #3273dc;">58%</span></strong>. For dynamic fling task, improving metrics by over <strong><span style="font-size: 1.1em; color: #3273dc;">20%</span></strong>.
-      </h2>
-      
-      <!-- 不同服装类型的抓取任务结果 -->
-      <h3 class="title is-4" style="text-align: left; margin-bottom: 1rem;">Results of different garment types in grasp task</h3>
-      <img src="static/images/different_mode.png" alt="Results of different garment types" style="max-width:1000px;width:100%;height:auto;border-radius:10px;">
-      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        GarmentDynamics achieves the lowest sim-to-real gap across different garment types, with error reductions of over <strong><span style="font-size: 1.1em; color: #3273dc;">37%</span></strong> compared to baselines. For complex garments like Cakeskirt, it reduces errors by up to <strong><span style="font-size: 1.1em; color: #3273dc;">44%</span></strong> in pseudo mode and <strong><span style="font-size: 1.1em; color: #3273dc;">77%</span></strong> in robot mode.
-      </h2>
-    </div>
-  </div>
-</section>
 <!-- End single image showcase -->
 <!-- <section class="hero is-small">
   <div class="hero-body">
